@@ -14,8 +14,8 @@ public class SendMoneyProducer {
     private final KafkaTemplate<String, SendMoneyRequestEvent> kafkaTemplate;
 
     public void sendMoneyEvent(SendMoneyRequestEvent sendMoneyEventRequestEvent) {
-        log.debug("==> Producing message {}", sendMoneyEventRequestEvent.toString());
-        kafkaTemplate.send("SEND-MONEY-EVENT", sendMoneyEventRequestEvent);
+        log.info("==> Producing message to SEND-MONEY-REQUEST-EVENT {}", sendMoneyEventRequestEvent.toString());
+        kafkaTemplate.send("SEND-MONEY-REQUEST-EVENT", sendMoneyEventRequestEvent);
     }
 
 }

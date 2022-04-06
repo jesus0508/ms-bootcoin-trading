@@ -5,8 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import pe.com.project4.ms.domain.OrderBootcoinState;
 import pe.com.project4.ms.domain.OrderBootcoin;
+import pe.com.project4.ms.domain.OrderBootcoinState;
 import pe.com.project4.ms.domain.PaymentMethod;
 
 import java.math.BigDecimal;

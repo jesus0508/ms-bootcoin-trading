@@ -5,9 +5,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 import pe.com.project4.ms.application.OrderBootcoinService;
-import pe.com.project4.ms.infrastructure.event.PurchaseOrderEvent;
 import pe.com.project4.ms.domain.OrderBootcoin;
 import pe.com.project4.ms.domain.OrderBootcoinState;
+import pe.com.project4.ms.infrastructure.event.PurchaseOrderEvent;
 
 @Component
 @Slf4j
